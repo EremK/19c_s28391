@@ -4,8 +4,18 @@
 
 
 # Task 2
-def e_squares(start, end):
-    return [x ** 2 for x in range(start, end)]
+# def e_squares(start, end):
+#     return [x ** 2 for x in range(start, end)]
+#
+#
+# print(e_squares(3, 15))
 
 
-print(e_squares(3, 15))
+# Task 3
+class SquareGenerator:
+    @staticmethod
+    def e_squares(start, end):
+        return [x ** 2 for x in range(start, end)]
+
+
+print(SquareGenerator.e_squares(5, 21))
