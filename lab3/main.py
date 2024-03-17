@@ -38,7 +38,15 @@ class SquareGenerator:
 
 # Task 6
 # main.py
-from square_generator import SquareGenerator
+# from square_generator import SquareGenerator
+#
+# try:
+#     print(SquareGenerator.e_squares(5, 21))
+# except ValueError as e:
+#     print(e)
+
+# Task 7
+from square_generator.square_generator import SquareGenerator
 
 try:
     print(SquareGenerator.e_squares(5, 21))
