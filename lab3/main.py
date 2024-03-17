@@ -18,4 +18,10 @@ class SquareGenerator:
         return [x ** 2 for x in range(start, end)]
 
 
-print(SquareGenerator.e_squares(5, 21))
+# Task 4
+import math
+
+list1 = SquareGenerator.e_squares(1, 11)
+list2 = [math.pow(x, 2) for x in list1]
+
+print(list2)
