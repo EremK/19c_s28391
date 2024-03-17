@@ -34,3 +34,13 @@ class SquareGenerator:
         if start > end:
             raise ValueError("Start index must be smaller than the end one.")
         return [x ** 2 for x in range(start, end)]
+
+
+# Task 6
+# main.py
+from square_generator import SquareGenerator
+
+try:
+    print(SquareGenerator.e_squares(5, 21))
+except ValueError as e:
+    print(e)
