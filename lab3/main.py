@@ -55,12 +55,20 @@ except ValueError as e:
 
 
 # Task 8
+# class CubicGenerator(SquareGenerator):
+#     @staticmethod
+#     def e_cubes(start, end):
+#         if start > end:
+#             raise ValueError("Start index must be smaller than the end one.")
+#         return [x ** 3 for x in range(start, end)]
+#
+#
+# print(CubicGenerator.e_cubes(1, 11))
+
+# Task 9
 class CubicGenerator(SquareGenerator):
     @staticmethod
-    def e_cubes(start, end):
+    def e_squares(start, end):
         if start > end:
             raise ValueError("Start index must be smaller than the end one.")
-        return [x ** 3 for x in range(start, end)]
-
-
-print(CubicGenerator.e_cubes(1, 11))
+        return [x ** 2 for x in range(start, end)]
