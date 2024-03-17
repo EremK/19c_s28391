@@ -25,3 +25,12 @@ list1 = SquareGenerator.e_squares(1, 11)
 list2 = [math.pow(x, 2) for x in list1]
 
 print(list2)
+
+
+# Task 5
+class SquareGenerator:
+    @staticmethod
+    def e_squares(start, end):
+        if start > end:
+            raise ValueError("Start index must be smaller than the end one.")
+        return [x ** 2 for x in range(start, end)]
